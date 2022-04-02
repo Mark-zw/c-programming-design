@@ -164,5 +164,21 @@
 //#include<stdio.h>
 //int main()
 //{
+//	//1---´×  0---½´ÓÍ
+//	int a = 1;
+//	int b = 0;
+//	void Swap(int x, int y);
+//	printf("Before Swap:\n");
+//	printf("a = %d,b = %d\n", a, b);
+//	Swap(&a, &b);
+//	printf("After Swap:\n");
+//	printf("a = %d,b = %d\n", a, b);
 //	return 0;
 //}
+//void Swap(int* x, int* y)
+//{
+//	int temp = *x;
+//	*x = *y;
+//	*y = temp;
+//}
+

@@ -36,3 +36,22 @@
 //		cout << "Stupid! wrong integer" << endl;
 //	return 0;
 //}
+
+//#include<iostream>
+//using namespace std;
+//void Swap(int& x, int& y)
+//{
+//	int temp = x;
+//	x = y;
+//	y = temp;
+//}
+//int main()
+//{
+//	int a = 1; int b = 0;
+//	cout << "Before Swap:" << endl;
+//	cout << "a = " << a << ", b = " << b << endl;
+//	Swap(a, b);
+//	cout << "After Swap:" << endl;
+//	cout << "a = " << a  << ", b = " << b << endl;
+//	return 0;
+//}
