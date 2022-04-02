@@ -1,0 +1,4 @@
+﻿  chapter2.c
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_2\chapter_2\chapter2.c(119,22): warning C4028: 形参 1 与声明不同
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_2\chapter_2\chapter2.c(147,22): warning C4028: 形参 1 与声明不同
+  chapter_2.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_2\Debug\chapter_2.exe
