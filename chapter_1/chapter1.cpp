@@ -113,3 +113,17 @@
 //	cout << "max: " << max << endl;
 //	return 0;
 //}
+
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int i, mul = 1;
+//	while (i < 6)
+//	{
+//		mul *= i;
+//		i++
+//	}
+//	cout << mul << endl;
+//	return 0;
+//}
