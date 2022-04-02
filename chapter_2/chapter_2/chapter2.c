@@ -87,76 +87,82 @@
 //	return 0;
 //}
 
-//判断素数
-#include<stdio.h>
-#include<stdbool.h>
-#include<math.h>
-int main()
-{
-	bool IsPrime1(int x);
-	bool IsPrime2(int x);
-	bool IsPrime3(int x);
-	bool ret1 = IsPrime1(5);
-	bool ret2 = IsPrime2(6);
-	bool ret3 = IsPrime3(7);
-	//printf("ret1 = %d,ret2 = %d,ret3 = %d\n", ret1, ret2, ret3);
-	if (ret1)
-		printf("ret1 is true.  5 is prime\n");
-	else
-		printf("ret1 is false.  5 isn't prime\n");
-	if (ret2)
-		printf("ret2 is true.  6 is prime\n");
-	else
-		printf("ret2 is false.  6 isn't prime\n");
-	if (ret3)
-		printf("ret3 is true.  7 is primen\n");
-		else
-		printf("ret3 is false.  7 isn't prime\n");
-	return 0;
-}
-//方法一：素数的定义，只能被1和自己整除
-//是素数返回true，否则返回false
-bool IsPrime1(size_t x)
-{
-	size_t i;
-	for (i = 2; i < x; i++)
-	{
-		if (x % i == 0)
-			break;
-	}
-	if (i < x)
-		return false;
-	else
-	    return true;
-}
-//方法二：对方法一的优化，判断素数的时候不用判断到自身这个位置，只需要判断到自身开根号的位置
-bool IsPrime2(int x)
-{
-	size_t i;
-	for (i = 2; i < sqrt(x); i++)
-	{
-		if (x % i == 0)
-			break;
-	}
-	if (i <= sqrt(x))
-		return false;
-	else
-		return true;
-}
-//方法三：设置一个标志位，提前退出循环，加速素数判断
-bool IsPrime3(size_t x)
-{
-	int flag = 1;
-	for (size_t i = 2; i <= sqrt(x); i++)
-	{
-		if (x % i == 0)
-		{
-			flag = 0;
-			break;
-		}
-	}
-	if (flag == 0)
-		return false;
-	else
-		return true;
-}
+////判断素数
+//#include<stdio.h>
+//#include<stdbool.h>
+//#include<math.h>
+//int main()
+//{
+//	bool IsPrime1(int x);
+//	bool IsPrime2(int x);
+//	bool IsPrime3(int x);
+//	bool ret1 = IsPrime1(5);
+//	bool ret2 = IsPrime2(6);
+//	bool ret3 = IsPrime3(7);
+//	//printf("ret1 = %d,ret2 = %d,ret3 = %d\n", ret1, ret2, ret3);
+//	if (ret1)
+//		printf("ret1 is true.  5 is prime\n");
+//	else
+//		printf("ret1 is false.  5 isn't prime\n");
+//	if (ret2)
+//		printf("ret2 is true.  6 is prime\n");
+//	else
+//		printf("ret2 is false.  6 isn't prime\n");
+//	if (ret3)
+//		printf("ret3 is true.  7 is primen\n");
+//		else
+//		printf("ret3 is false.  7 isn't prime\n");
+//	return 0;
+//}
+////方法一：素数的定义，只能被1和自己整除
+////是素数返回true，否则返回false
+//bool IsPrime1(size_t x)
+//{
+//	size_t i;
+//	for (i = 2; i < x; i++)
+//	{
+//		if (x % i == 0)
+//			break;
+//	}
+//	if (i < x)
+//		return false;
+//	else
+//	    return true;
+//}
+////方法二：对方法一的优化，判断素数的时候不用判断到自身这个位置，只需要判断到自身开根号的位置
+//bool IsPrime2(int x)
+//{
+//	size_t i;
+//	for (i = 2; i < sqrt(x); i++)
+//	{
+//		if (x % i == 0)
+//			break;
+//	}
+//	if (i <= sqrt(x))
+//		return false;
+//	else
+//		return true;
+//}
+////方法三：设置一个标志位，提前退出循环，加速素数判断
+//bool IsPrime3(size_t x)
+//{
+//	int flag = 1;
+//	for (size_t i = 2; i <= sqrt(x); i++)
+//	{
+//		if (x % i == 0)
+//		{
+//			flag = 0;
+//			break;
+//		}
+//	}
+//	if (flag == 0)
+//		return false;
+//	else
+//		return true;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	return 0;
+//}
