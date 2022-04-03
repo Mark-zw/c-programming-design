@@ -182,7 +182,7 @@
 //	*y = temp;
 //}
 
-////1.依次输入10个数，要求输出其中最大的数
+////2.依次输入10个数，要求输出其中最大的数
 //#include<stdio.h>
 //int main()
 //{
@@ -197,5 +197,134 @@
 //			max = arr[i];
 //	}
 //	printf("max is %d\n", max);
+//	return 0;
+//}
+
+////3.有3个数a，b，c，要求按大小顺序把它们输出
+//#include<stdio.h>
+//void Swap(int* x, int* y)
+//{
+//	int temp  = *x;
+//	*x = *y;
+//	*y = temp;
+//}
+//int main()
+//{
+//	int a, b, c;
+//	scanf("%d%d%d", &a, &b, &c);
+//	if (a < b)
+//		Swap(&a, &b);
+//	if (a < c)
+//		Swap(&a, &c);
+//	if (b < c)
+//		Swap(&b, &c);
+//	printf("%d,%d,%d\n", a, b, c);//最终按照a,b,c顺序输出，要求a >= b >= c
+//	return 0;
+//}
+
+////4.求1+2+3+...+100
+//#include<stdio.h>
+//int main()
+//{
+//	int sum = 0;
+//	for (int i = 1; i <= 100; ++i)
+//	{
+//		sum += i;
+//	}
+//	printf("sum is %d.\n", sum);
+//	return 0;
+//}
+
+////5.判断一个数n能否同时被3和5整除
+//#include<stdio.h>
+//int main()
+//{
+//	int num;
+//	scanf("%d", &num);
+//	if (num % 3 == 0 && num % 5 == 0)
+//		printf("%d can be divided by 3 and 5.\n", num);
+//	else
+//		printf("%d can not be divided by 3 and 5.\n", num);
+//	return 0;
+//}
+
+//6.将100~200之间的素数输出
+//#include<stdio.h>
+//#include<stdbool.h>
+//#include<math.h>
+//bool IsPrime(size_t x)
+//{
+//	int flag = 1;
+//	for (int i = 2; i < sqrt(x); i++)
+//	{
+//		if (x % i == 0)
+//		{
+//			flag = 0;
+//			break;
+//		}
+//	}
+//	if (flag == 1)
+//		return true;
+//	else
+//		return false;
+//}
+//int main()
+//{
+//	int i = 100;
+//	while (i <= 200)
+//	{
+//		if (IsPrime(i))
+//			printf("%d ", i);
+//		i++;
+//	}
+//	printf("\n--------------------------\n");
+//	return 0;
+//}
+
+////7.求两个数m和n的最大公约数
+//#include<stdio.h>
+//int func(int m, int n)//求最大公约数
+//{
+//	int rem = m % n;//rem表示(m,n)之间的余数
+//	while (rem > 0)
+//	{
+//		m = n;
+//		n = rem;
+//		rem = m % n;
+//	}
+//	return n;
+//}
+//int main()
+//{
+//	int a, b;
+//	int ret;
+//	scanf("%d%d", &a, &b);
+//	ret = func(a, b);
+//	printf("%d and %d greatest common divider is %d.\n", a, b, ret);
+//	return 0;
+//}
+
+////8.求方程ax^2+bx+c=0的根
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	float a, b, c;
+//	float delta,root1,root2;
+//	scanf("%f%f%f", &a, &b, &c);
+//	delta = b * b - 4 * a * c;
+//	if (delta > 0)
+//	{
+//		root1 = (-b + sqrt(delta)) / (2 * a);
+//		root2 = (-b - sqrt(delta)) / (2 * a);
+//		printf("%f x^2+%f x+%f=0 have two roots are %f and %f.\n", a, b, c, root1,root2);
+//	}
+//	else if (delta == 0)
+//	{
+//		root1 = root2 = (-b ) / (2 * a);
+//		printf("%fx^2+%fx+%f=0 have a root is %f.\n",a,b,c,root1);
+//	}
+//	else
+//		printf("%fx^2+%fx+%f=0 haven't any root.\n",a,b,c);
 //	return 0;
 //}
