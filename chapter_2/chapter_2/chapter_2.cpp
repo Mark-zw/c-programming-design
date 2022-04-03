@@ -55,3 +55,23 @@
 //	cout << "a = " << a  << ", b = " << b << endl;
 //	return 0;
 //}
+
+////1.依次输入10个数，要求输出其中最大的数
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int arr[10];
+//	int i = 0, max;
+//	while (i < 10)
+//	{
+//		cin >> arr[i];
+//		if (i == 0)
+//			max = arr[i];
+//		if (arr[i] > max)
+//			max = arr[i];
+//		i++;
+//	}
+//	cout << "max is " << max << endl;
+//	return 0;
+//}

@@ -182,3 +182,20 @@
 //	*y = temp;
 //}
 
+////1.依次输入10个数，要求输出其中最大的数
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int max;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//		if (i == 0)
+//			max = arr[i];
+//		if (arr[i] > max)
+//			max = arr[i];
+//	}
+//	printf("max is %d\n", max);
+//	return 0;
+//}
