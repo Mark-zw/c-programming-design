@@ -58,16 +58,41 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//int main()
+//{
+//	//printf("'");
+//	//printf("-----------------------------\n");
+//	//printf("\'");
+//	//printf("?\n");
+//	//printf("-----------------------------\n");
+//	//printf("\?\n");
+//	unsigned char c = 128;
+//	int a = -1;
+//	float f = 1.23345f;
+//	printf("%u\a\n",a);
+//	printf("%c\a\n", c);
+//	printf("%f\a\n", f);
+//
+//	return 0;
+//}
+
 #include<stdio.h>
 int main()
 {
-	//printf("'");
-	//printf("-----------------------------\n");
-	//printf("\'");
-	//printf("?\n");
-	//printf("-----------------------------\n");
-	//printf("\?\n");
+	int a = + 1, b = - 2, c = 3;
+	printf("(%d) + (%d) = %d\n", a, b, a + b);
+	printf("(%d) * (%d) = %d\n", a, b, a * b);
+	printf("(%d) / (%d) = %d\n", a, b, a / b);
+	printf("(%d) / (%d) = %d\n", b, a, b / a);
+	a = 3, b = 4;
+	printf("%d %% %d = %d\n", a, b, a % b);
+	printf(" ++a = %d\n", ++a);
+	printf(" ++b = %d\n", ++b);
+	printf(" a++ = %d\n", a++);
+	printf(" b++ = %d\n", b++);
+	printf(" a = %d\n", a);
+	printf(" b = %d\n", b);
 
-	printf("\a");
 	return 0;
 }
