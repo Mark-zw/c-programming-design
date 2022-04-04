@@ -195,3 +195,77 @@
 //	putchar(ch2);
 //	return 0;
 //}
+
+////¿ÎºóÏ°Ìâ
+////1.
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	float p = 1;
+//	while (i++ <= 50)
+//	{
+//		p *= 1.07;
+//	}
+//	printf("%f%%\n", p * 100);
+//}
+
+////2.
+//#include<stdio.h>
+//int main()
+//{
+//	double m = 1000;
+//	double p0,p1, p2, p3, p5;
+//	double r0 = 0.0035,r1 = 0.015, r2 = 0.021, r3 = 0.0275, r5 = 0.03;
+//	p5 = m * (1 + r5);
+//	p2 = m * (1 + 2 * r2)*(1 + 3 * r3);
+//	p3 = m * (1 + 3 * r3)*(1 + 2 * r2);
+//	p1 = m * (1 + r2) * (1 + r2) * (1 + r2) * (1 + r2) * (1 + r2);
+//	for (int i = 1; i <= 5; i++)
+//		p0 = m * (1 + r0) * (1 + r0) * (1 + r0) * (1 + r0);
+//	printf("p0 = %f\np1 = %f\np2 = %f\np3 = %f\np5 = %f\n", p0, p1, p2, p3, p5);
+//	return 0;
+//}
+
+////3.
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	double d = 300000, p = 6000, r = 0.01;
+//	double m;
+//	m = log(p / (p - d * r)) / log(1 + r);
+//	printf("%lf\n", m);
+//	return 0;
+//}
+
+////4.
+//#include<stdio.h>
+//int main()
+//{
+//	int c1, c2;
+//	//c1 = 97;
+//	//c2 = 98;
+//	c1 = 197;
+//	c2 = 198;
+//	printf("c1 = %3c,c2 = %3c\n", c1, c2);
+//	printf("c1 = %3d,c2 = %3d\n", c1, c2);
+//	return 0;
+//}
+
+////5.
+//#include<stdio.h>
+//int main()
+//{
+//	int a, b;
+//	float x, y;
+//	char c1, c2;
+//	scanf("a=%db=%d", &a, &b);
+//	scanf("%f%e",&x,&y);
+//	scanf("%c%c", &c1, &c2);
+//	printf("a = %d,b = %d\n", a, b);
+//	printf("x = %f,y = %f\n", x, y);
+//	printf("c1 = %c,c2 = %c\n", c1, c2);
+//	return 0;
+//}
+
