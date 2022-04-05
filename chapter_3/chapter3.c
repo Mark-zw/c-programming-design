@@ -269,3 +269,57 @@
 //	return 0;
 //}
 
+////6
+//#include<stdio.h>
+//int main()
+//{
+//	char c1, c2, c3, c4, c5;
+//	scanf("%c%c%c%c%c", &c1, &c2, &c3, &c4, &c5);
+//	//c1 = getchar();
+//	//c2 = getchar();
+//	//c3 = getchar();
+//	//c4 = getchar();
+//	//c5 = getchar();
+//	//putchar(c1 + 4);
+//	//putchar(c2 + 4);
+//	//putchar(c3 + 4);
+//	//putchar(c4 + 4);
+//	//putchar(c5 + 4);
+//	//printf("%c%c%c%c%c\n", c1 + 4, c2 + 4, c3 + 4, c4 + 4, c5 + 4);
+//	return 0;
+//}
+
+////7.
+//#include<stdio.h>
+//#define Pi 3.1415926
+//int main()
+//{
+//	double r, h;
+//	scanf("%lf%lf", &r, &h);
+//	double l = 2 * Pi * r;//圆周长
+//	double s = Pi * r * r;//圆面积
+//	double S1 = 4 * Pi * r * r;//圆球表面积
+//	double V1 = 4 * Pi * r * r * r / 3;//圆球体积
+//	double V2 = s * h;//圆柱体积
+//	printf("圆周长：%.2f\n", l);
+//	printf("圆面积：%.2f\n", s);
+//	printf("圆球表面积：%.2f\n", S1);
+//	printf("圆球体积：%.2f\n", V1);
+//	printf("圆柱体积：%.2f\n", V2);
+//	return 0;
+//}
+
+//8.
+#include<stdio.h>
+int main()
+{
+	char c1, c2;
+	c1 = getchar();
+	c2 = getchar();
+	putchar(c1);
+	putchar(c2);
+	printf("\n%c %c\n", c1, c2);
+	printf("%d %d\n", c1, c2);
+
+	return 0;
+}
