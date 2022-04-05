@@ -49,16 +49,64 @@
 //    printf("%d", d);
 //}
 
+//#include<stdio.h>
+//int main()
+//{
+//	int x;
+//	while (scanf("%d", &x) != EOF)
+//	{
+//		if (x >= 0)
+//			printf("%d\n", x);
+//		else
+//			printf("%d\n", -x);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	double d1, d2;
+//	scanf("%lf%lf", &d1, &d2);
+//	if (d1 <= d2)
+//		printf("%lf,%lf\n", d1, d2);
+//	else
+//		printf("%lf,%lf\n", d2, d1);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	double d1, d2;
+//	scanf("%lf%lf", &d1, &d2);
+//	if (d1 > d2)
+//	{
+//		double temp = d1;
+//		d1 = d2;
+//		d2 = temp;
+//	}
+//	printf("%lf,%lf", d1, d2);
+//	return 0;
+//}
+
 #include<stdio.h>
+void Swap(double* x, double* y)
+{
+	double temp = *x;
+	*x = *y;
+	*y = temp;
+}
 int main()
 {
-	int x;
-	while (scanf("%d", &x) != EOF)
-	{
-		if (x >= 0)
-			printf("%d\n", x);
-		else
-			printf("%d\n", -x);
-	}
+	double a, b, c;
+	scanf("%lf%lf%lf", &a, &b, &c);
+	if (a > b)
+		Swap(&a, &b);
+	if (a > c)
+		Swap(&a, &c);
+	if (b > c)
+		Swap(&b, &c);
+	printf("%lf,%lf,%lf\n", a, b, c);
 	return 0;
 }
