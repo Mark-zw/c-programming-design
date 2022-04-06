@@ -1,3 +1,2 @@
 ﻿  chapter_4.c
-D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_4\chapter_4.c(307,10): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“double”
   chapter_4.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_4\Debug\chapter_4.exe

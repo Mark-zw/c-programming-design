@@ -279,7 +279,7 @@
 //    return 0;
 //}
 
-////3.
+////4.
 //
 //#include<stdio.h>
 //int main()
@@ -295,7 +295,7 @@
 //	return 0;
 //}
 
-////4.
+////5.
 //#include<stdio.h>
 //#include<math.h>
 //int main()
@@ -310,3 +310,75 @@
 //	return 0;
 //}
 
+////6.
+//#include<stdio.h>
+//int main()
+//{
+//	double x, y;
+//	scanf("%lf", &x);
+//	if (x < 1)
+//		y = x;
+//	else if (x >= 1 && x < 10)
+//		y = 2 * x - 1;
+//	else
+//		y = 3 * x - 11;
+//	printf("x = %lf,y = %lf\n", x, y);
+//	return 0;
+//}
+
+////7.
+//
+////8.
+//#include<stdio.h>
+//int main()
+//{
+//	size_t grade;
+//	scanf("%d", &grade);
+//	if (grade < 0 || grade > 100)
+//		printf("error grade!\n");
+//	else if (grade >= 90)
+//		printf("A");
+//	else if (grade >= 80)
+//		printf("B");
+//	else if (grade >= 70)
+//		printf("C");
+//	else if (grade >= 60)
+//		printf("D");
+//	else
+//		printf("E");
+//	return 0;
+//}
+
+////9.
+//#include<stdio.h>
+//int main()
+//{
+//	int count = 0;//统计位数
+//	size_t n;
+//	scanf("%d", &n);
+//	if (n > 99999)
+//		printf("error number!\n");
+//	else
+//	{
+//		int x1, x2, x3, x4, x5;//记录余数
+//		x1 = n % 10;
+//		x2 = (n % 100) / 10;
+//		x3 = (n % 1000) / 100;
+//		x4 = (n % 10000) / 1000;
+//		x5 = n / 10000;
+//		if (x1)
+//			count++;
+//		if (x2)
+//			count++;
+//		if (x3)
+//			count++;
+//		if (x4)
+//			count++;
+//		if (x5)
+//			count++;
+//		printf("count: %d\n", count);
+//		printf("%d %d %d %d %d\n", x5, x4, x3, x2, x1);
+//		printf("%d %d %d %d %d\n", x1, x2, x3, x4, x5);
+//	}
+//	return 0;
+//}
