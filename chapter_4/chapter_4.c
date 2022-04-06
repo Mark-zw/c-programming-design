@@ -195,48 +195,86 @@
 //	}
 //	return 0;
 //}
+//
+//#include<stdio.h>
+//int main()
+//{
+//	int c, s;
+//	double p, w, d, f;
+//	printf("please enter price and weight:\n");
+//	scanf("%lf%lf", &p, &w);
+//	printf("please enter distant:\n");
+//	scanf("%d", &s);
+//	if (s >= 3000)
+//		c = 12;
+//	else
+//		c = s / 250;
+//	switch (c)
+//	{
+//	case 0:
+//		d = 0;
+//		break;
+//	case 1:
+//		d = 2;
+//		break;
+//	case 2:
+//	case 3:
+//		d = 5;
+//		break;
+//	case 4:
+//	case 5:
+//	case 7:
+//		d = 8;
+//		break;
+//	case 8:
+//	case 9:
+//	case 10:
+//	case 11:
+//		d = 10;
+//		break;
+//	case 12:
+//		d = 15;
+//		break;
+//	}
+//	f = p * w * s * (1 - d / 100);
+//	printf("freight is %lf\n", f);
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    scanf("%d", &n);
+//    //n = n << 1;
+//    printf("%d", n << 1);
+//    return 0;
+//}
 
 #include<stdio.h>
 int main()
 {
-	int c, s;
-	double p, w, d, f;
-	printf("please enter price and weight:\n");
-	scanf("%lf%lf", &p, &w);
-	printf("please enter distant:\n");
-	scanf("%d", &s);
-	if (s >= 3000)
-		c = 12;
-	else
-		c = s / 250;
-	switch (c)
-	{
-	case 0:
-		d = 0;
-		break;
-	case 1:
-		d = 2;
-		break;
-	case 2:
-	case 3:
-		d = 5;
-		break;
-	case 4:
-	case 5:
-	case 7:
-		d = 8;
-		break;
-	case 8:
-	case 9:
-	case 10:
-	case 11:
-		d = 10;
-		break;
-	case 12:
-		d = 15;
-		break;
-	}
-	f = p * w * s * (1 - d / 100);
-	printf("freight is %lf\n", f);
-	return 0;
+    int num;
+    float max, min, avg, sum = 0;
+    float arr[5];
+    scanf("%d", &num);
+    scanf("%f%f%f%f%f", arr, arr + 1, arr + 2, arr + 3, arr + 4);
+    int i = 0;
+    while (i < 5)
+    {
+        if (i == 0)
+        {
+            max = arr[i];
+            min = arr[i];
+        }
+        if (max < arr[i])
+            max = arr[i];
+        if (min > arr[i])
+            min = arr[i];
+        sum += arr[i];
+        i++;
+    }
+    avg = sum / 5;
+    printf("%.2f %.2f %.2f\n", max, min, avg);
+    return 0;
 }
