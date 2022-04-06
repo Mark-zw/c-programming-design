@@ -251,30 +251,62 @@
 //    return 0;
 //}
 
-#include<stdio.h>
-int main()
-{
-    int num;
-    float max, min, avg, sum = 0;
-    float arr[5];
-    scanf("%d", &num);
-    scanf("%f%f%f%f%f", arr, arr + 1, arr + 2, arr + 3, arr + 4);
-    int i = 0;
-    while (i < 5)
-    {
-        if (i == 0)
-        {
-            max = arr[i];
-            min = arr[i];
-        }
-        if (max < arr[i])
-            max = arr[i];
-        if (min > arr[i])
-            min = arr[i];
-        sum += arr[i];
-        i++;
-    }
-    avg = sum / 5;
-    printf("%.2f %.2f %.2f\n", max, min, avg);
-    return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//    int num;
+//    float max, min, avg, sum = 0;
+//    float arr[5];
+//    scanf("%d", &num);
+//    scanf("%f%f%f%f%f", arr, arr + 1, arr + 2, arr + 3, arr + 4);
+//    int i = 0;
+//    while (i < 5)
+//    {
+//        if (i == 0)
+//        {
+//            max = arr[i];
+//            min = arr[i];
+//        }
+//        if (max < arr[i])
+//            max = arr[i];
+//        if (min > arr[i])
+//            min = arr[i];
+//        sum += arr[i];
+//        i++;
+//    }
+//    avg = sum / 5;
+//    printf("%.2f %.2f %.2f\n", max, min, avg);
+//    return 0;
+//}
+
+////3.
+//
+//#include<stdio.h>
+//int main()
+//{
+//	int a, b, c;
+//	scanf("%d%d%d", &a, &b, &c);
+//	int max = a;
+//	if (max < b)
+//		max = b;
+//	if (max < c)
+//		max = c;
+//	printf("max is %d\n", max);
+//	return 0;
+//}
+
+////4.
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	int n;
+//	printf("Please enter an integer bigger than 0 and smaller than 1000: ");
+//	scanf("%d", &n);
+//	if (n > 0 && n < 1000)
+//		printf("%d\n", (int)sqrt(n));
+//	else
+//		printf("error number,please try again!\n");
+//	return 0;
+//}
+
