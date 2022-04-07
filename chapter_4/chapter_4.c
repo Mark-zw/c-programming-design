@@ -408,12 +408,95 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//int main()
+//{
+//	float bonus, profit;
+//	printf("Please input your profit(larger than zero): ");
+//	scanf("%f", &profit);
+//	if (profit < 0)
+//	{
+//		printf("error profit,try again!\n");
+//		exit(1);
+//	}
+//	int n = (int)profit / 100000;
+//	switch (n)
+//	{
+//	case 0:
+//		bonus = profit * 0.1;
+//		break;
+//	case 1:
+//		bonus = 100000 * 0.1 + (profit - 100000) * 0.075;
+//		break;
+//	case 2:
+//	case 3:
+//		bonus = 100000 * 0.1 + 100000 * 0.075 + (profit - 200000) * 0.05;
+//		break;
+//	case 4:
+//	case 5:
+//		bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + (profit - 200000) * 0.03;
+//		break;
+//	case 6:
+//	case 7:
+//	case 8:
+//	case 9:
+//		bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + (profit - 600000) * 0.015;
+//		break;
+//	default:
+//		bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + 400000*0.15 + (profit - 1000000) * 0.01;
+//		break;
+//	}
+//	printf("bonus is %.0f\n", bonus);
+//	return 0;
+//}
+
+////11.
+//#include<stdio.h>
+//void Swap(int* px, int* py)
+//{
+//	int temp = *px;
+//	*px = *py;
+//	*py = temp;
+//}
+//int main()
+//{
+//	int n1, n2, n3, n4;
+//	printf("Please enter four integer : ");
+//	scanf("%d%d%d%d", &n1, &n2, &n3, &n4);
+//	if (n1 > n2)
+//		Swap(&n1, &n2);
+//	if (n1 > n3)
+//		Swap(&n1, &n3);
+//	if (n1 > n4)
+//		Swap(&n1, &n4);
+//	if (n2 > n3)
+//		Swap(&n2, &n3);
+//	if (n2 > n4)
+//		Swap(&n2, &n4);
+//	if (n3 > n4)
+//		Swap(&n3, &n4);
+//	printf("%d,%d,%d,%d\n", n1, n2, n3, n4);//从小到大，n1，n2,n3,n4的顺序排列
+//	return 0;
+//}
+
+//12.
 #include<stdio.h>
+#include<math.h>
+double Distant(double a,double b, double x, double y)//用于计算点(a,b)与(x,y)之间的距离
+{
+	return sqrt((x - a) * (x - a) + (y - b) * (y - b));
+}
 int main()
 {
-	float bonus, profit;
-	printf("Please input your profit(larger than zero): ");
-	scanf("%f", &profit);
-	int n = (int)profit / 100000;
+	double x, y;
+	int high;
+	printf("Please enter two real number as coordinate: ");
+	scanf("%lf%lf", &x, &y);
+	if (Distant(2, 2, x, y) > 1 && Distant(-2, 2, x, y) > 1 
+		&& Distant(2, -2, x, y) > 1 && Distant(-2, -2, x, y) > 1)
+		high = 0;
+	else
+		high = 10;
+	printf("high is %d\n", high);
 	return 0;
 }
