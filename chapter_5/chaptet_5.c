@@ -350,3 +350,251 @@
 //	printf("character:%d\nspace:%d\nnumber:%d\nother:%d\n", character, space, number, other);
 //	return 0;
 //}
+
+////5.
+//#include<stdio.h>
+//int main()
+//{
+//	int a, n, sum = 0;
+//	printf("Please enter a integer between 1 and 9:");
+//	scanf("%d", &a);
+//	printf("Please enter a number:");
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		sum += a;
+//		a = 10 * a + a;
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
+
+////6.
+//#include<stdio.h>
+//int main()
+//{
+//	int sum = 0, n;
+//	scanf("%d", &n);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		//求阶乘
+//		int fac = 1;
+//		for (int j = 1; j <= i; j++)
+//			fac *= j;
+//		sum += fac;
+//		printf("%d\n", sum);
+//	}
+//	return 0;
+//}
+
+////7.
+//#include<stdio.h>
+//int main()
+//{
+//	double sum, sum1, sum2, sum3;
+//	int i;
+//	sum = sum1 = sum2 = sum3 = 0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		sum1 += i;
+//	}
+//	for (i = 1; i <= 50; i++)
+//	{
+//		sum2 += i * i;
+//	}
+//	for (i = 1; i <= 10; i++)
+//	{
+//		sum3 += 1.0 / i;
+//	}
+//	sum = sum1 + sum2 + sum3;
+//	printf("%.25lf", sum);
+//	return 0;
+//}
+
+////8.水仙花数 --- 自幂数
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	int n1 = 0, n2 = 0, n3 = 0,n4 = 0;//分别表示个位、十位、百位、千位
+//	for (int i = 100; i <= 999; i++)
+//	{
+//		n1 = i % 10;
+//		n2 = (i / 10) % 10;
+//		n3 = i / 100;
+//		if (i == pow(n1, 3) + pow(n2, 3) + pow(n3, 3))
+//			printf("%d ", i);
+//	}
+//	printf("\n---------------------------\n");
+//	for (int i = 1000; i <= 9999; i++)
+//	{
+//		n1 = i % 10;
+//		n2 = (i / 10) % 10;
+//		n3 = (i / 100) % 10;
+//		n4 = i / 1000;
+//		if (i == pow(n1, 4) + pow(n2, 4) + pow(n3, 4)+ pow(n4, 4))
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+////9.完数
+//#include<stdio.h>
+//int main()
+//{
+//	for (int i = 1; i <= 1000; i++)
+//	{
+//		int sum = 0;
+//		for (int j = 1; j <= i / 2; j++)
+//		{
+//			if (i % j == 0)
+//				sum += j;
+//		}
+//		if (sum == i)
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+////10.
+//#include<stdio.h>
+//int main()
+//{
+//	float n1 = 1, n2 = 2, sum = 0;
+//	for (int i = 1; i <= 20; i++)
+//	{
+//		sum += n2 / n1;
+//		float temp = n2;
+//		n2 += n1;
+//		n1 = temp;
+//	}
+//	printf("%f", sum);
+//	return 0;
+//}
+
+////11.
+//#include<stdio.h>
+//int main()
+//{
+//	float high = 10, distance = 0;
+//	for (int i = 1; i <= 10; i++)
+//	{
+//		distance += high;
+//		high /= 2;
+//	}
+//	printf("distance is %f\n", distance);
+//	printf("high is %f\n", high);
+//	return 0;
+//}
+
+////12.
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 1;
+//	for (int i = 9; i >= 1; i--)
+//	{
+//		n = n * 2 + 1;
+//	}
+//	printf("The first day have %d peaches\n", n);
+//	return 0;
+//}
+
+////13.
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	float a, x1, x2;
+//	scanf("%f", &a);
+//	x1 = 1;
+//	x2 = (x1 + (a / x1)) / 2;
+//	while ((x2 - x1) > pow(10, -5))
+//	{
+//		x1 = x2;
+//		x2 = (x1 + (a / x1)) / 2;
+//	}
+//	printf("%lf", x2);
+//	return 0;
+//}
+
+////14.跳过 牛顿迭代法
+//#include<stdio.h>
+//#include<math.h>
+//double f(double x)
+//{
+//	return 2 * pow(x, 3) - 4 * pow(x, 2) + 3 * x - 6;
+//}
+//int main()
+//{
+//	double exp, exp1, exp2;
+//	double n1 = 1.5,n2 = 1, n3 = 2;
+//	exp = f(n1);
+//	exp1 = f(n2);
+//	exp2 = f(n3);
+//	if (exp > 0)
+//	{
+//		if (exp1 < 0)
+//		{
+//			n1 = 
+//		}
+//	}
+//	else if (exp < 0)
+//	{
+//
+//	}
+//	else
+//		printf("root is %f\n", n1);
+//	return 0;
+//}
+
+//15.跳过
+
+////16.打印菱形
+//#include<stdio.h>
+//int main()
+//{
+//	//先打印上三角
+//	for (int i = 1; i <= 4; i++)
+//	{
+//		//控制一行的打印
+//		//1.先打印空格
+//		for (int j = 4 - i; j >= 1; j--)
+//			printf(" ");
+//		//2.再打印*
+//		for (int j = 1; j <= 2*i - 1; j++)
+//			printf("*");
+//		//3.打印换行
+//		printf("\n");
+//	}
+//	//再打印下三角
+//	for (int i = 3; i >= 1; i--)
+//	{
+//		//控制一行的打印
+//		//1.先打印空格
+//		for (int j = 4 - i; j >= 1; j--)
+//			printf(" ");
+//		//2.再打印*
+//		for (int j = 1; j <= 2 * i - 1; j++)
+//			printf("*");
+//		//3.打印换行
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+////17.
+//#include<stdio.h>
+//int main()
+//{
+//	char i, j, k;//假设A、B、C和i、j、k比赛
+//	for (i = 'X'; i <= 'Z'; i++)
+//		for (j = 'X'; j <= 'Z'; j++)
+//			if (i != j)
+//				for (k = 'X'; k <= 'Z'; k++)
+//					if (i != k && j != k)
+//						if (i != 'X' && k != 'X' && k != 'Z')
+//							printf("A -- %c\nB -- %c\nC -- %c\n", i, j, k);
+//	return 0;
+//}
