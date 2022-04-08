@@ -288,19 +288,65 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-int main()
-{
-	char c;
-	while ((c = getchar()) != "\n")
-	{
-		if ((c >= 'A' && c <= "Z") || (c >= 'a' && c <= 'z'))
-		{
-			c += 4;
-			if (c > 'Z' && c < 'Z' + 4 || c > 'z')
-				c -= 26;
-		}
-		putchar(c);
-	}
-	return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//	char c;
+//	while ((c = getchar()) != "\n")
+//	{
+//		if ((c >= 'A' && c <= "Z") || (c >= 'a' && c <= 'z'))
+//		{
+//			c += 4;
+//			if (c > 'Z' && c < 'Z' + 4 || c > 'z')
+//				c -= 26;
+//		}
+//		putchar(c);
+//	}
+//	return 0;
+//}
+
+////3.求最大公约数和最小公倍数
+//#include<stdio.h>
+//int main()
+//{
+//	int m, n;
+//	printf("请输入两个正整数：");
+//	scanf("%d%d", &m, &n);
+//	int r = m % n;
+//	//辗转相除法
+//	int tem = m, ten = n;
+//	while (r)
+//	{
+//		tem = ten;
+//		ten = r;
+//		r = tem % ten;
+//	}
+//	printf("最大公约数为：%d\n", ten);
+//	int s;//用于求最小公倍数
+//	//利用最大公约数
+//	s = m * n / ten;
+//	printf("最小公倍数为：%d\n", s);
+//	return 0;
+//}
+
+////4.统计字符个数
+//#include<stdio.h>
+//int main()
+//{
+//	int character, space, number, other;
+//	character = space = number = other = 0;
+//	char ch;
+//	while ((ch = getchar()) != '\n')
+//	{
+//		if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+//			character++;
+//		else if (ch == ' ')
+//			space++;
+//		else if (ch >= '0' && ch <= '9')
+//			number++;
+//		else
+//			other++;
+//	}
+//	printf("character:%d\nspace:%d\nnumber:%d\nother:%d\n", character, space, number, other);
+//	return 0;
+//}
