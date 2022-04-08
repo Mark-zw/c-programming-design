@@ -1,2 +1,4 @@
 ﻿  chaptet_5.c
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_5\chaptet_5.c(295,32): warning C4047: “!=”:“int”与“char [2]”的间接级别不同
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_5\chaptet_5.c(297,28): warning C4047: “<=”:“int”与“char [2]”的间接级别不同
   chapter_5.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_5\Debug\chapter_5.exe

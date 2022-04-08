@@ -180,3 +180,127 @@
 //	printf("Pi/4 is %f\n", sum);
 //	return 0;
 //}
+
+////斐波那契数列
+//#include<stdio.h>
+//int main()
+//{
+//	int f1 = 1, f2 = 1,f3;
+//	int n;
+//	scanf("%d", &n);
+//	printf("%d %d ", f1, f2);
+//	for (int i = 2; i <= n; i++)
+//	{
+//		f3 = f1 + f2;
+//		printf("%d ", f3);
+//		f1 = f2;
+//		f2 = f3;
+//	}
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//int main()
+//{
+//	int f1 = 1, f2 = 1;
+//	int i;
+//	for (i = 2; i <= 20; i++)
+//	{
+//		printf("%12d %12d ", f1, f2);
+//		if (i % 2 == 0)
+//			printf("\n");
+//		f1 = f1 + f2;
+//		f2 = f2 + f1;
+//		//printf("\n");
+//	}
+//	return 0;
+//}
+
+////判定素数
+//#include<stdio.h>
+//#include<math.h>
+//int IsPrime1(size_t n)
+//{
+//	int i;
+//	for (i = 2; i <= sqrt(n); i++)
+//	{
+//		if (n % i == 0)
+//			break;
+//	}
+//	if (i < sqrt(n))
+//		return 0;
+//	else
+//		return 1;
+//}
+//int main()
+//{
+//	size_t n;
+//	scanf("%d", &n);
+//	int ret = IsPrime1(n);
+//	if (ret)
+//		printf("%d is a prime.", n);
+//	else
+//		printf("%d isn't a prime.", n);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int IsPrime(int n)
+//{
+//	int k = sqrt(n),i;
+//	for (i = 2; i <= k; i++)
+//	{
+//		if (n % i == 0)
+//			break;
+//	}
+//	if (i <= k)
+//		return 0;
+//	else
+//		return 1;
+//}
+//int main()
+//{
+//	int n1 = 100, n2 = 200, i;
+//	for (i = n1; i <= n2; i++)
+//	{
+//		if (IsPrime(i))
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	int n, i;
+//	for (n = 101; n <= 200; n += 2)
+//	{
+//		for (i = 2; i < sqrt(n); i++)
+//		{
+//			if (n % i == 0)
+//				break;
+//		}
+//		if (i > sqrt(n))
+//			printf("%d ", n);
+//	}
+//	return 0;
+//}
+
+#include<stdio.h>
+int main()
+{
+	char c;
+	while ((c = getchar()) != "\n")
+	{
+		if ((c >= 'A' && c <= "Z") || (c >= 'a' && c <= 'z'))
+		{
+			c += 4;
+			if (c > 'Z' && c < 'Z' + 4 || c > 'z')
+				c -= 26;
+		}
+		putchar(c);
+	}
+	return 0;
+}
