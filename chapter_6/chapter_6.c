@@ -136,3 +136,58 @@
 //	char s[] = "I am fine";
 //	return 0;
 //}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char s[] = "Hello C!";
+//	printf("%s\n", s);
+//	printf("%s\n", "happy new day!");
+//	scanf("%s", s);
+//	printf("%s\n", s);
+//
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//int main()
+//{
+//	char str1[20], str2[20], str3[20];
+//	scanf("%s%s%s", str1, str2, str3);
+//	printf("%s %s %s\n", str1, str2, str3);
+//	printf("%p %p %p\n", str1, str2, str3);
+//
+//	printf("%o %o %o\n", str1, str2, str3);
+//	printf("%d %d %d\n", str1, str2, str3);
+//	puts(str1);
+//
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char str[20];
+//	gets(str);
+//	puts(str);
+//	
+//	return 0;
+//}
+
+//#include<stdio.h>
+////#include<string.h>
+//int main()
+//{
+//	char str1[30] = "People's Republic of ";
+//	char str2[10] = "China";
+//	printf("%s\n", strcat(str1, str2));
+//	char str3[30];
+//	strcpy(str3, str1);
+//	printf("%s\n", str3);
+//	strcpy(str3, "China");
+//	printf("%s\n", str3);
+//	strncpy(str3, str1, 2);
+//	printf("%s\n", str3);
+//
+//	return 0;
+//}

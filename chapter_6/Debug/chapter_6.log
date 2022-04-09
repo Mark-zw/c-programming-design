@@ -1,2 +1,6 @@
 ﻿  chapter_6.c
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_6\chapter_6.c(183,23): warning C4013: “strcat”未定义；假设外部返回 int
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_6\chapter_6.c(183,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_6\chapter_6.c(185,8): warning C4013: “strcpy”未定义；假设外部返回 int
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_6\chapter_6.c(189,9): warning C4013: “strncpy”未定义；假设外部返回 int
   chapter_6.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_6\Debug\chapter_6.exe
