@@ -191,3 +191,132 @@
 //
 //	return 0;
 //}
+
+////字符串比较
+//#include<stdio.h>
+//int main()
+//{
+//	char str1[30] = "Kandom", str2[30] = "king ring", str3[30] = "Kandomary";
+//	//scanf("%s%s", str1, str2);
+//	int ret = strcmp(str1, str2);
+//	if (ret > 0)
+//		printf("%s is bigger than %s\n", str1, str2);
+//	else if (ret == 0)
+//		printf("%s is equal to %s\n", str1, str2);
+//	else
+//		printf("%s is smaller than %s\n", str1, str2);
+//	printf("the length of %s is %d\n", str1, strlen(str1));
+//	printf("the length of %s is %d\n", str2, strlen(str2));
+//	printf("the length of %s is %d\n", str3, strlen(str3));
+//
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char str[] = "China";
+//	printf("%s\n", str);
+//	strlwr(str);
+//	printf("%s\n", str);
+//	strupr(str);
+//	printf("%s\n", str);
+//
+//	return 0;
+//}
+
+////统计单词数量
+//#include<stdio.h>
+//int main()
+//{
+//	//思路，单词的数量应该比空格的数量多一个，
+//	//eg：I am student who is studing computer science by myself（10个单词，9个空格）
+//	//用一个较大的字符数组来存储一句话
+//	char str[200];
+//	gets(str);
+//	int count = 0;//统计空格的数量
+//	for (int i = 0; i < strlen(str); i++)
+//	{
+//		if (str[i] == ' ')
+//			count++;
+//	}
+//	printf("%d words\n", count + 1);
+//}
+
+////找出三个字符串中的最大值
+//#include<stdio.h>
+//int main()
+//{
+//	char str[3][20];
+//	char max[20];
+//	for (int i = 0; i < 3; i++)
+//		gets(str[i]);
+//	for (int i = 0; i < 3; i++)
+//	{
+//		if (strcmp(str[0], str[1]) > 0)
+//			strcpy(max, str[0]);
+//		else
+//			strcpy(max, str[1]);
+//		if (strcmp(str[2], max) > 0)
+//			strcpy(max, str[2]);
+//	}
+//	printf("the max string is %s\n", max);
+//	return 0;
+//}
+
+//课后习题
+////1.100之内所有素数
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	//2.再控制外层循环从2-100
+//	for (int i = 2; i <= 100; i++)
+//	{
+//		int flag = 1;//1表示素数 0表示不是素数
+//		//1.判断一个数是否为素数
+//		for (int j = 2; j <= sqrt(i); j++)
+//			if (i % j == 0)
+//				flag = 0;
+//		if (flag == 1)
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+////2.选择法排序
+//#include<stdio.h>
+//void Swap(int* px, int* py)
+//{
+//	int temp = *px;
+//	*px = *py;
+//	*py = temp;
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,7,9,0,3,4,6,8,2,4 };
+//	int size = sizeof(arr) / sizeof(arr[0]);
+//	//2.再控制排序的趟数
+//	for (int i = 0; i < size - 1; i++)
+//	{
+//		//1.先控制一趟排序，从数组中选出最小的元素，将其与最左边未排序元素交换
+//		int index = i;//记录最小元素的下标
+//		int min = arr[i];//假设最小值是左边未排序的第一个元素
+//		for (int j = i + 1; j < size; j++)
+//		{
+//			if (arr[j] < min)
+//			{
+//				min = arr[j];
+//				index = j;
+//			}
+//		}
+//		Swap(&arr[i], &arr[index]);
+//	}
+//	for (int i = 0; i < size; i++)
+//	{
+//		printf("%d ", *(arr + i));
+//	}
+//	return 0;
+//}
+
+//3.求3*3整型矩阵对角线元素
