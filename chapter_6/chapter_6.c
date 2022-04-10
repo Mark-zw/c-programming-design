@@ -332,3 +332,87 @@
 //	return 0;
 //}
 
+////4.插入一个数到一个已经排序的数组中，仍然保持有序
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[20] = { 1,2,3,4,8,9,10,11,12 };
+//	int size = 9;
+//	int num,index = 0,i;
+//	scanf("%d", &num);
+//	//找到num应该插入的位置
+//	for (i = 0; i < size; i++)
+//	{
+//		if (num >= arr[i])//加 = 号是为了保证插入num后整体的稳定性
+//			index++;
+//		else
+//			break;
+//	}
+//	if (i == size)
+//		index = size;
+//	//将数组arr从index向后元素整体移动一位
+//	for (i = size; i > index; i--)
+//	{
+//		arr[i] = arr[i - 1];
+//	}
+//	arr[i] = num;
+//	//打印数组
+//	for (i = 0; i <= size; i++)
+//		printf("%d ", arr[i]);
+//	return 0;
+//}
+
+////5.逆序数组
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[] = { 8,6,5,4,1 };
+//	int begin = 0;
+//	int end = sizeof(arr) / sizeof(arr[0]) - 1;
+//	while (begin < end)
+//	{
+//		int temp = arr[begin];
+//		arr[begin++] = arr[end];
+//		arr[end--] = temp;
+//	}
+//	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+//		printf("%d ", arr[i]);
+//	return 0;
+//}
+
+////6.输出杨辉三角
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10][10] = { 0 };
+//	//存储杨辉三角
+//	for(int i = 0;i < 10 ;i++)
+//		for (int j = 0; j <= i; j++)
+//		{
+//			if (i == 0 || i == 1)
+//				arr[i][j] = 1;
+//			else if (j == 0 || j == i)
+//				arr[i][j] = 1;
+//			else
+//				arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+//		}
+//	//打印杨辉三角
+//	for (int i = 0; i < 10; i++)
+//	{
+//		for (int j = 0; j <= i; j++)
+//			printf("%-4d", arr[i][j]);
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+////7.输出魔方阵
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[5][5];
+//	//构造魔方阵
+//	//1)奇数阶魔方
+//
+//	return 0;
+//}
