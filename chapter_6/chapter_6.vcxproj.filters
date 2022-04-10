@@ -21,5 +21,8 @@
     <ClCompile Include="chapter_6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="chpter_6_2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
