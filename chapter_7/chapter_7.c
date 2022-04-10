@@ -47,3 +47,15 @@
 //	return x + y;
 //}
 
+//#include<stdio.h>
+//int max(int x, int y)
+//{
+//	return x > y ? x : y;
+//}
+//int main()
+//{
+//	int a, b, c, d;
+//	scanf("%d%d%d%d", &a, &b, &c, &d);
+//	printf("max is %d\n", max(max(max(a, b), c), d));
+//	return 0;
+//}
