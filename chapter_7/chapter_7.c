@@ -147,22 +147,38 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//float average(float* score, int n)
+//{
+//	float sum = score[0],avg;
+//	for (int i = 1; i < n; i++)
+//	{
+//		sum += score[i];
+//	}
+//	avg = sum / n;
+//	return avg;
+//}
+//int main()
+//{
+//	float score1[5] = { 98.5,97,91.5,60,55 };
+//	float score2[10] = { 67.5,89.5,99,69.5,77,89.5,76.5,54,60,99.5 };
+//	printf("The average of class A is %6.2f\n", average(score1, 5));
+//	printf("The average of class B is %6.2f\n", average(score2, 10));
+//	return 0;
+//}
+
 #include<stdio.h>
-float average(float* score, int n)
-{
-	float sum = score[0],avg;
-	for (int i = 1; i < n; i++)
-	{
-		sum += score[i];
-	}
-	avg = sum / n;
-	return avg;
-}
 int main()
 {
-	float score1[5] = { 98.5,97,91.5,60,55 };
-	float score2[10] = { 67.5,89.5,99,69.5,77,89.5,76.5,54,60,99.5 };
-	printf("The average of class A is %6.2f\n", average(score1, 5));
-	printf("The average of class B is %6.2f\n", average(score2, 10));
+	//int arr[3][4] = { 12,11,23,42,2,4,5,7,97,102,23,41 };
+	int arr[][4] = { 12,11,23,42,2,4,5,7,97,102,23,41 };
+	int max = arr[0][0];
+	for(int i = 0;i<3;i++)
+		for (int j = 0; j < 4; j++)
+		{
+			if (arr[i][j] > max)
+				max = arr[i][j];
+		}
+	printf("max is %d\n", max);
 	return 0;
 }
