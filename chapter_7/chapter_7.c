@@ -167,18 +167,59 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-int main()
-{
-	//int arr[3][4] = { 12,11,23,42,2,4,5,7,97,102,23,41 };
-	int arr[][4] = { 12,11,23,42,2,4,5,7,97,102,23,41 };
-	int max = arr[0][0];
-	for(int i = 0;i<3;i++)
-		for (int j = 0; j < 4; j++)
-		{
-			if (arr[i][j] > max)
-				max = arr[i][j];
-		}
-	printf("max is %d\n", max);
-	return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//	//int arr[3][4] = { 12,11,23,42,2,4,5,7,97,102,23,41 };
+//	int arr[][4] = { 12,11,23,42,2,4,5,7,97,102,23,41 };
+//	int max = arr[0][0];
+//	for(int i = 0;i<3;i++)
+//		for (int j = 0; j < 4; j++)
+//		{
+//			if (arr[i][j] > max)
+//				max = arr[i][j];
+//		}
+//	printf("max is %d\n", max);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//float Min, Max;
+//float GetAvg(float score[], int size)
+//{
+//	float sum = 0;
+//	Min = Max = score[0];
+//	for (int i = 0; i < size; ++i)
+//	{
+//		sum += score[i];
+//		if (Min > score[i])
+//			Min = score[i];
+//		if (Max < score[i])
+//			Max = score[i];
+//	}
+//	return sum / size;
+//}
+//int main()
+//{
+//	float score[10], avg;
+//	printf("Please enter 10 number:");
+//	for (int i = 0; i < 10; i++)
+//		scanf("%f", score + i);
+//	avg = GetAvg(score, sizeof(score) / sizeof(score[0]));
+//	printf("avg = %.2f\nmax = %.2f\nmin = %.2f\n", avg, Max, Min);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int a = 3, b = 5;
+//int main()
+//{
+//	int max(int a, int b);
+//	int a = 8;
+//	printf("max = %d\n", max(a, b));
+//	return 0;
+//}
+//int max(int a, int b)
+//{
+//	return a > b ? a : b;
+//}
