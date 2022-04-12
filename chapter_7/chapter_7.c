@@ -262,3 +262,33 @@
 //	print_string(str);
 //	return 0;
 //}
+#include<stdio.h>
+int main()
+{
+	size_t GetGcd(int m, int n);
+	size_t GetLcm(int m, int n);
+	size_t a, b,gcd,lcm;//gcd greatest common divied 最大公约数 lcd lastest common multiple
+	printf("Please enter two positive integer:");
+	scanf("%d%d", &a, &b);
+	gcd = GetGcd(a, b);
+	lcm = GetLcm(a, b);
+	printf("%d 和 %d 的最大公约数：%d，最小公倍数是：%d\n",a,b, gcd, lcm);
+	return 0;
+}
+size_t GetGcd(size_t m, size_t n)
+{
+	//用辗转相除法求最大公约数
+	size_t r = m % n;
+	while (r)
+	{
+		m = n;
+		n = r;
+		r = m % n;
+	}
+	return n;
+}
+size_t GetLcm(int m, int n)
+{
+	size_t gcd = GetGcd(m, n);
+	return m * n / gcd;
+}
