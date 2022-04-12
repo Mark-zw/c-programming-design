@@ -223,3 +223,42 @@
 //{
 //	return a > b ? a : b;
 //}
+
+//#include<stdio.h>
+//int main()
+//{
+//
+//	return 0;
+//}
+//#include<stdio.h>                                                                    
+//int main()
+//{
+//	int max();
+//	extern int A, B, C;
+//	printf("Please enter three integer numbers:");
+//	scanf("%d%d%d", &A, &B, &C);
+//	printf("max is %d\n", max());
+//	return 0;
+//}
+//int A, B, C;
+//int max()
+//{
+//	int m = A > B ? A : B;
+//	if (m < C)
+//		m = C;
+//	return m;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	extern enter_string(char str[]);
+//	extern delete_string(char str[], char ch);
+//	extern print_string(char str[]);
+//	char str[80], ch;
+//	enter_string(str);
+//	scanf("%c", &ch);
+//	delete_string(str, ch);
+//	print_string(str);
+//	return 0;
+//}

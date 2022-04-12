@@ -1,2 +1,3 @@
-﻿  chapter_7.c
+﻿  file3.c
+Debug\chapter_7.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
   chapter_7.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_7\Debug\chapter_7.exe
