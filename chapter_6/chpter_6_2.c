@@ -35,4 +35,10 @@
 //	return 0;
 //}
 
-//9.
+//9.’€∞Î≤È’“
+#include<stdio.h>
+int main()
+{
+
+	return 0;
+}
