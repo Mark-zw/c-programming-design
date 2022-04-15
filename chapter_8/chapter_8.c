@@ -72,4 +72,9 @@
 //		printf("%2d", *(arr + i));
 //	}
 //}
+#include<stdio.h>
+int main()
+{
 
+	return 0;
+}
