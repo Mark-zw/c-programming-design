@@ -1,2 +1,3 @@
-﻿  chapter_8.c
-  chapter_8.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_8\Debug\chapter_8.exe
+﻿Debug\chapter_8.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_8\Debug\chapter_8.exe : fatal error LNK1120: 1 个无法解析的外部命令
