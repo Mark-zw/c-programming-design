@@ -72,24 +72,106 @@
 //		printf("%2d", *(arr + i));
 //	}
 //}
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[3][4] = { 1,3,5,7,9,11,13,15,17,19,21,23 };
+//	int* p;
+//	for (p = arr[0]; p < arr[0] + 12; p++)
+//	{
+//		if ((p - arr[0]) % 4 == 0)
+//			printf("\n");
+//		printf("%4d", *p);
+//	}
+//	printf("\n");
+//	p = arr[0];
+//	for (p = arr[0]; p < arr[0] + 12; p++)
+//	{
+//		if ((p - arr[0]) % 4 == 0)
+//			printf("\n");
+//		printf("%10p", p);
+//	}
+//	printf("\n");
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[3][4] = { 1,3,5,7,9,11,13,15,17,19,21,23 };
+//	int(*p)[4] = &arr[0];
+//	for (int i = 0; i < 3; i++)
+//	{
+//		printf("%10p", p++);
+//	}
+//	printf("\n");
+//	p = &arr[0];
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 4; j++)
+//			printf("%3d", p[i][j]);
+//		printf("\n");
+//	}
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 4; j++)
+//			printf("%10p", &p[i][j]);
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char str[] = "I love China!";
+//	printf("%c\n", str[7]);
+//	for (int i = 0; i < (sizeof(str)/sizeof(str[0])); i++)
+//	{
+//		if (i == 7)
+//			printf("%c\n", str[i]);
+//	}
+//	printf("%c\n", *(str + 7));
+//	for (int i = 0; i < (sizeof(str) / sizeof(str[0])); i++)
+//	{
+//		if (i == 7)
+//			printf("%c\n", *(str + i));
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char* str = "I love China!\n";
+//	printf("%s", str);
+//	printf("%c", str[0]);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char str1[] = "I am a student.";
+//	char str2[30];
+//	char* p1 = str1, *p2 = str2;
+//	while (*p1 != '\0')
+//	{
+//		*(p2++) = *(p1++);
+//	}
+//	*p2 = *p1;
+//	printf("%s", str2);
+//	return 0;
+//}
+
 #include<stdio.h>
 int main()
 {
-	int arr[3][4] = { 1,3,5,7,9,11,13,15,17,19,21,23 };
-	int* p;
-	for (p = arr[0]; p < arr[0] + 12; p++)
-	{
-		if ((p - arr[0]) % 4 == 0)
-			printf("\n");
-		printf("%4d", *p);
-	}
-	printf("\n");
-	for (p = arr[0]; p < arr[0] + 12; p++)
-	{
-		if ((p - arr[0]) % 4 == 0)
-			printf("\n");
-		printf("%p", p);
-	}
-	printf("\n");
+	char a[] = "I am a boy.", b[20];
+	char* p1 = a, * p2 = b;
+	for (int i = 0; *(p1) != '\0'; p1++, p2++)
+		*p2 = *p1;
+	*p2 = '\0';
+	printf("%s", b);
 	return 0;
 }
