@@ -175,3 +175,82 @@
 //	printf("%s", b);
 //	return 0;
 //}
+//#include<stdio.h>
+//void StrCopy(char* str1, char* str2)//将str2中的内容复制到str1当中
+//{
+//	//while (*str2 != '\0')
+//	//{
+//	//	*str1++ = *str2++;
+//	//}
+//	//*str1 = *str2;
+//	//while(( * str1++ = *str2++) != '\0')
+//	//{ }
+//	while (*str1++ = *str2++)
+//	{ }
+//}
+//int main()
+//{
+//	char str1[] = "I am a teacher in high school!";
+//	char str2[50];
+//	StrCopy(str2, str1);
+//	printf("%s\n", str2);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	//char* str = "I love computer science!";
+//	char str[] = "I love computer science!";
+//	printf("%s\n", str);
+//	//str += 7;
+//	printf("%s\n", str);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	//int a = 666;
+//	//int b = 888;
+//	//char* format = "a = %d,b = %d\n";//格式化输出
+//	//printf(format, a, b);
+//	int arr[2][3] = { 1,2,3,4,5,6 };
+//	int(*p)[3] = arr;
+//	for (int i = 0; i < 2; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//			printf("%2d", p[i][j]);
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int Add(int x, int y);
+//	int a = 1, b = 2;
+//	int(* p)(int, int) = Add;
+//	printf("a+b = %d\n", p(a, b));
+//	return 0;
+//}
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+
+//#include<stdio.h>
+//int Max(int x, int  y)
+//{
+//	return x > y ? x : y;
+//}
+//int main()
+//{
+//	int a, b;
+//	scanf("%d%d", &a, &b);
+//	int (*p)(int, int) = Max;
+//	//printf("max is %d\n", (*p)(a, b));
+//	printf("max is %d\n", p(a, b));
+//	return 0;
+//}
+
