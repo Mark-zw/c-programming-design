@@ -254,3 +254,33 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//int max(int x, int y)
+//{
+//	return x > y ? x : y;
+//}
+//int min(int x, int y)
+//{
+//	return x < y ? x : y;
+//}
+//int main()
+//{
+//	int a, b, choose;
+//	scanf("%d%d", &a, &b);
+//	printf("choose: 1(max)  2(min) \n");
+//	scanf("%d", &choose);
+//	int(*p)(int, int);
+//	if (choose == 1)
+//	{
+//		p = max;
+//		printf("%d\n", p(a, b));
+//	}
+//	else if (choose == 2)
+//	{
+//		p = min;
+//		printf("%d\n", p(a, b));
+//	}
+//	else
+//		printf("your choose is error!\n");
+//	return 0;
+//}
