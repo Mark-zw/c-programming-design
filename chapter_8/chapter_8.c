@@ -284,3 +284,15 @@
 //		printf("your choose is error!\n");
 //	return 0;
 //}
+//#include<stdio.h>
+//int main()
+//{
+//    int hour, minute, k;
+//    scanf("%d:%d%d", &hour, &minute, &k);
+//    minute += k;//将要睡的时间加到minute上
+//    hour += minute / 60;//如果minute超过60，需要进位到hour
+//    minute %= 60;//进位后，minute应该保留小于60的那部分
+//    hour %= 24;//如果hour超过24，需要重新从0开始
+//    printf("%02d:%02d\n", hour, minute);//%02d是前导补0式输出域宽2位
+//    return 0;
+//}
