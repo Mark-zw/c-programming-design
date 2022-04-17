@@ -329,13 +329,41 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-int main()
-{
-    int n, round, time;//n表示排在小乐前面的人数，round表示小乐需要等多少趟电梯
-    scanf("%d", &n);
-    round = n / 12;
-    time = round * 4 + 2;
-    printf("%d", time);
-    return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//    int n, round, time;//n表示排在小乐前面的人数，round表示小乐需要等多少趟电梯
+//    scanf("%d", &n);
+//    round = n / 12;
+//    time = round * 4 + 2;
+//    printf("%d", time);
+//    return 0;
+//}
+//#include<stdio.h>
+//long long Get_Gcd(long long m, long long n)
+//{
+//    long long ret = m % n;
+//    while (ret)
+//    {
+//        m = n;
+//        n = ret;
+//        ret = m % n;
+//    }
+//    return n;
+//}
+//long long Get_Lcm(long long m, long long n)
+//{
+//    long long ret = Get_Gcd(m, n);
+//    return (m * n) / ret;
+//}
+//int main()
+//{
+//    long long n, m, gcd, lcm, sum;
+//    scanf("%lld%lld", &n, &m);
+//    gcd = Get_Gcd(m, n);
+//    lcm = Get_Lcm(m, n);
+//    sum = gcd + lcm;
+//    printf("%lld", sum);
+//    return 0;
+//}
+
