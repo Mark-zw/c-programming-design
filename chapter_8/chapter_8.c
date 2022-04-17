@@ -296,27 +296,46 @@
 //    printf("%02d:%02d\n", hour, minute);//%02d是前导补0式输出域宽2位
 //    return 0;
 //}
-#include<stdio.h>                                                                          
+//#include<stdio.h>                                                                          
+//int main()
+//{
+//	void Print();//This is a statement                                                     
+//	int i;
+//	for (i = 0; i < 100; i++)
+//	{
+//		printf("%d\n", i);
+//	}
+//	void (*p)();//define a pointer to function --- Print
+//	p = Print;
+//	p();// equel to Print()
+//	(*p)();// equel to Print()                            
+//	return 0;
+//}
+//void Print()
+//{
+//	printf("************************\n");
+//	printf("This is a test to debug!\n");
+//	printf("************************\n");
+//}
+
+
+//#include<stdio.h>
+////#include<unistd.h>
+//#include <windows.h>
+//int main()
+//{
+//	printf("Hello Linux,Hello Makeflie\n");
+//	Sleep(30000);
+//	return 0;
+//}
+
+#include<stdio.h>
 int main()
 {
-	void Print();//This is a statement                                                     
-	int i;
-	for (i = 0; i < 100; i++)
-	{
-		printf("%d\n", i);
-	}
-	void (*p)();//define a pointer to function --- Print
-	p = Print;
-	p();// equel to Print()
-	(*p)();// equel to Print()                            
-	return 0;
+    int n, round, time;//n表示排在小乐前面的人数，round表示小乐需要等多少趟电梯
+    scanf("%d", &n);
+    round = n / 12;
+    time = round * 4 + 2;
+    printf("%d", time);
+    return 0;
 }
-void Print()
-{
-	printf("************************\n");
-	printf("This is a test to debug!\n");
-	printf("************************\n");
-}
-
-
-    	
