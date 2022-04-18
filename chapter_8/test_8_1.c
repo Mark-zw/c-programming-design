@@ -48,18 +48,37 @@
 //		printf("%s\n", name[i]);
 //}
 
-#include<stdio.h>
-#include<Windows.h>
-int main()
-{
-	int arr[5] = { 1,3,5,7,9 };
-	int* num[5] = { arr,arr + 1,arr + 2,arr + 3,arr + 4 };
-	int** p = num;
-	int i;
-	for (i = 0; i < 5; i++)
-	{
-		printf("%2d\r", **(p + i));
-		Sleep(1000);
-	}
-	return 0;
-}
+//#include<stdio.h>
+//#include<Windows.h>
+//int main()
+//{
+//	int arr[5] = { 1,3,5,7,9 };
+//	int* num[5] = { arr,arr + 1,arr + 2,arr + 3,arr + 4 };
+//	int** p = num;
+//	int i;
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%2d\r", **(p + i));
+//		Sleep(1000);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//    int n, out = 0, i = 0;
+//    scanf("%d", &n);
+//    while (n)
+//    {
+//        int temp = 1;
+//        if (n % 2 == 0)
+//            temp = 0;
+//        out += temp * pow(10, i++);
+//        n /= 10;
+//    }
+//    printf("%d", out);
+//    return 0;
+//}
+
