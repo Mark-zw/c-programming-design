@@ -82,8 +82,83 @@
 //    return 0;
 //}
 
+//#include<stdio.h>
+//int main(int argc,char* argv[])
+//{
+//	while (argc > 1)
+//	{
+//		printf("%s\n", *argv);
+//		++argv;
+//		--argc;
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int* p1 = (int*)malloc(sizeof(int));
+//	*p1 = 2;
+//	printf("%d", *p1);
+//	return 0;
+//}
+
+/* malloc example: random string generator*/
+#include <stdio.h>      /* printf, scanf, NULL */
+#include <stdlib.h>     /* malloc, free, rand */
+
+//int main()
+//{
+//    int i, n;
+//    char* buffer;
+//    printf("How long do you want the string?\n");
+//    scanf("%d", &i);
+//    buffer = (char*)malloc(i + 1);
+//    if (buffer == NULL) exit(1);
+//    for (n = 0; n < i; n++)
+//        buffer[n] = rand() % 26 + 'a';
+//    buffer[i] = '\0';
+//    printf("Random string: %s\n", buffer);
+//    free(buffer);
+//    return 0;
+//}
+
+//#include<stdio.h>
+////#include<stdlib.h>
+//int main()
+//{
+//	/*int* arr1 = (int*)malloc(10 * sizeof(int));
+//	int* arr2 = (int*)calloc(10, sizeof(int));
+//	int* arr3 = (int*)realloc(arr2, 2000 * sizeof(int));
+//	free(arr1);
+//	free(arr3);*/
+//	int a = 2;
+//	void* p = &a;
+//	printf("%d\n", *(int*)p);
+//
+//	return 0;
+//}
+
 #include<stdio.h>
+#include<stdlib.h>
+void Check(int* score,int n)
+{
+	int i;
+	for (i = 0; i < n; i++)
+	{
+		if (score[i] < 60)
+			printf("%3d", score[i]);
+	}
+	printf("\n");
+}
 int main()
 {
+	int* score = (int*)malloc(5 * sizeof(int));
+	int i;
+	for (i = 0; i < 5; i++)
+	{
+		scanf("%d", score + i);
+	}
+	Check(score,5);
 	return 0;
 }
