@@ -103,9 +103,9 @@
 //	return 0;
 //}
 
-/* malloc example: random string generator*/
-#include <stdio.h>      /* printf, scanf, NULL */
-#include <stdlib.h>     /* malloc, free, rand */
+///* malloc example: random string generator*/
+//#include <stdio.h>      /* printf, scanf, NULL */
+//#include <stdlib.h>     /* malloc, free, rand */
 
 //int main()
 //{
@@ -166,3 +166,88 @@
 //课后习题
 
 //1.
+
+//#include<stdio.h>
+//#include <stdlib.h>
+//#ifndef _COLOR_H_
+//#define _COLOR_H_
+//
+//#define NONE                  "\e[0m"           //清除颜色，即之后的打印为正常输出，之前的不受影响
+//#define BLACK                 "\e[0;30m"         //深黑
+//#define L_BLACK             "\e[1;30m"            //亮黑，偏灰褐
+//#define RED                     "\e[0;31m"      //深红，暗红
+//#define L_RED                 "\e[1;31m"        //鲜红
+//#define GREEN                "\e[0;32m"         //深绿，暗绿
+//#define L_GREEN            "\e[1;32m"           //鲜绿
+//#define BROWN               "\e[0;33m"          //深黄，暗黄
+//#define YELLOW              "\e[1;33m"          //鲜黄
+//#define BLUE                    "\e[0;34m"      //深蓝，暗蓝
+//#define L_BLUE                "\e[1;34m"        //亮蓝，偏白灰
+//#define PURPLE               "\e[0;35m"         //深粉，暗粉，偏暗紫
+//#define L_PURPLE           "\e[1;35m"           //亮粉，偏白灰
+//#define CYAN                   "\e[0;36m"       //暗青色
+//#define L_CYAN               "\e[1;36m"         //鲜亮青色
+//#define GRAY                   "\e[0;37m"       //灰色
+//#define WHITE                  "\e[1;37m"       //白色，字体粗一点，比正常大，比bold小
+//#define BOLD                    "\e[1m"         //白色，粗体
+//#define UNDERLINE         "\e[4m"               //下划线，白色，正常大小
+//#define BLINK                   "\e[5m"         //闪烁，白色，正常大小
+//#define REVERSE            "\e[7m"              //反转，即字体背景为白色，字体为黑色
+//#define HIDE                     "\e[8m"        //隐藏
+//#define CLEAR                  "\e[2J"          //清除
+//#define CLRLINE               "\r\e[K"          //清除行
+//
+//#endif
+//
+//int main()
+//{
+//	printf("\e[0;36m""This is a test");
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//    printf("\033[32;5m 字符串闪耀\033[0m\r\n");
+//    printf("\033[5m 字符串闪耀\033[0m\n");
+//    printf("\033[4m 下划线\033[0m\n");
+//    printf("\033[1;33m printf不一样的玩法. \033[0m \n");  //
+//
+//    printf("\033[1;33m 字体颜色:\n");
+//    printf("\033[0m none:\n");
+//    printf("\033[0;30m back:\n");
+//    printf("\033[1;30m dark_back:\n");
+//    printf("\033[0;34m blue:\n");
+//    printf("\033[1;34m light_blue:\n");
+//    printf("\033[0;32m green:\n");
+//    printf("\033[1;32m light_green:\n");
+//    printf("\033[0;36m cyan:\n");
+//    printf("\033[1;36m light_scan:\n");
+//    printf("\033[0;31m red:\n");
+//    printf("\033[1;31m light_read:\n");
+//    printf("\033[0;35m purple:\n");
+//    printf("\033[1;35m light_purple:\n");
+//    printf("\033[0;33m yellow:\n");
+//    printf("\033[1;33m light_yellow:\n");
+//    printf("\033[0;37m white:\n");
+//    printf("\033[1;37m light_white:\n");
+//
+//    printf("\033[1;33m 背景颜色:\n");
+//    printf("\033[0m none:\033[0m\n");
+//    printf("\033[0;40m back:\033[0m\n");
+//    printf("\033[0;44m blue:\033[0m\n");
+//    printf("\033[0;42m green:\033[0m\n");
+//    printf("\033[0;46m cyan:\033[0m\n");
+//    printf("\033[0;41m red:\033[0m\n");
+//    printf("\033[0;45m purple:\033[0m\n");
+//    printf("\033[0;43m brown:\033[0m\n");
+//    printf("\033[0;47m light_yellow:\033[0m\n");
+//
+//    printf("\033[1;33m 背景字体颜色:\033[0m\n");
+//    printf("\033[47;31mhello world\033[?25l");
+//    //47是字背景颜色, 31是字体的颜色, hello world是字符串. 后面的\033[?25l是控制码：用来隐藏光标.
+//    printf("\033[0m");
+//    return 0;
+//}
+
+
