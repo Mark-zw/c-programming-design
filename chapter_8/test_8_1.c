@@ -138,27 +138,31 @@
 //
 //	return 0;
 //}
+//
+//#include<stdio.h>
+//#include<stdlib.h>
+//void Check(int* score,int n)
+//{
+//	int i;
+//	for (i = 0; i < n; i++)
+//	{
+//		if (score[i] < 60)
+//			printf("%3d", score[i]);
+//	}
+//	printf("\n");
+//}
+//int main()
+//{
+//	int* score = (int*)malloc(5 * sizeof(int));
+//	int i;
+//	for (i = 0; i < 5; i++)
+//	{
+//		scanf("%d", score + i);
+//	}
+//	Check(score,5);
+//	return 0;
+//}
 
-#include<stdio.h>
-#include<stdlib.h>
-void Check(int* score,int n)
-{
-	int i;
-	for (i = 0; i < n; i++)
-	{
-		if (score[i] < 60)
-			printf("%3d", score[i]);
-	}
-	printf("\n");
-}
-int main()
-{
-	int* score = (int*)malloc(5 * sizeof(int));
-	int i;
-	for (i = 0; i < 5; i++)
-	{
-		scanf("%d", score + i);
-	}
-	Check(score,5);
-	return 0;
-}
+//¿ÎºóÏ°Ìâ
+
+//1.
