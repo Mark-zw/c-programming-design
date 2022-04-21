@@ -32,3 +32,21 @@
 //    }
 //    return 0;
 //}
+
+////#include<stdio.h>
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//    double weight, height, IBM;
+//    //scanf("%lf%lf",&weight,&height);
+//    cin >> weight >> height;
+//    IBM = weight / (height * height);
+//    if (IBM >= 18.5 && IBM <= 23.9)
+//        //printf("Normal\n");
+//        cout << "Normal" << endl;
+//    else
+//        //printf("Abnormal\n");
+//        cout << "Abnormal" << endl;
+//    return 0;
+//}
