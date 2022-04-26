@@ -1,3 +1,2 @@
 ﻿  chpater_9.c
-D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_9\chapter_9\chpater_9.c(127,14): warning C4013: “strcmp”未定义；假设外部返回 int
   chapter_9.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_9\x64\Debug\chapter_9.exe

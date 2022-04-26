@@ -134,3 +134,32 @@
 //	}
 //	return 0;
 //}
+
+//#include<stdio.h>
+//typedef struct Student
+//{
+//	int num;
+//	char name[20];
+//	float score;
+//}Student;
+//int main()
+//{
+//	Student stu[5] = { {10101,"zhang",78},{10102,"li",77},
+//		{10103,"sun",98},{10104,"wang",91},{10105,"qian",73} };
+//	Student temp;
+//	int i, j;
+//	for(i = 0; i < 5;i++)
+//		for (j = 0; j < 4 - i ; j++)
+//		{
+//			if (stu[j].score > stu[j + 1].score)
+//			{
+//				temp = stu[j];
+//				stu[j] = stu[j + 1];
+//				stu[j + 1] = temp;
+//			}
+//		}
+//	printf("num     name      float\n");
+//	for (i = 0; i < 5; i++)
+//		printf("%-8d%-10s%-5.0f\n", stu[i].num, stu[i].name, stu[i].score);
+//	return 0;
+//}
