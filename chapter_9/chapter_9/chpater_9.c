@@ -148,7 +148,7 @@
 //		{10103,"sun",98},{10104,"wang",91},{10105,"qian",73} };
 //	Student temp;
 //	int i, j;
-//	for(i = 0; i < 5;i++)
+//	for(i = 0; i < 4;i++)
 //		for (j = 0; j < 4 - i ; j++)
 //		{
 //			if (stu[j].score > stu[j + 1].score)
@@ -161,5 +161,82 @@
 //	printf("num     name      float\n");
 //	for (i = 0; i < 5; i++)
 //		printf("%-8d%-10s%-5.0f\n", stu[i].num, stu[i].name, stu[i].score);
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//struct Student
+//{
+//	int No;
+//	char name[20];
+//	char sex;
+//	float score;
+//};
+//int main()
+//{
+//	struct Student s1;
+//	struct Student* p = &s1;
+//	scanf("%d%s %c%f", &p->No, p->name, &p->sex, &p->score);
+//	//scanf("%d%s%c%lf", &s1.No, s1.name, &s1.sex, &s1.score);
+//	printf("No.:%d\n", s1.No);
+//	printf("Name:%s\n", s1.name);
+//	printf("Sex:%c\n", s1.sex);
+//	printf("Score:%.2f\n", s1.score);
+//	printf("No.:%d  Name:%s  Sex:%c  Score:%.2f \n", p->No, p->name, p->sex, p->score);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//struct Student
+//{
+//	int num;
+//	int age;
+//	char name[10];
+//	char sex;
+//};
+//int main()
+//{
+//	struct Student stu[3] = { {10101,19,"Li Ling",'M'},
+//		{10102,20,"Wang Fang",'F'},{10103,22,"Zhang San",'M'} };
+//	struct Student* p = stu;
+//	int i;
+//	printf("No     Age  Name      Sex\n");
+//	for (i = 0; i < 3; i++)
+//	{
+//		//printf("%7d%5d%10s%3c\n", p[i].num, p[i].age, p[i].name, p[i].sex);
+//		printf("%-7d%-5d%-10s%-3c\n", (p + i)->num, (p + i)->age, (p + i)->name, (p + i)->sex);
+//	}
+//	printf("sizeof(struct Student) is %d\n", sizeof(struct Student));
+//	return 0;
+//}
+
+//#include<stdio.h>
+//struct Student
+//{
+//	int num;
+//	char name[10];
+//	float math;
+//	float english;
+//	float computer;
+//};
+//void fun(struct Student* stu)
+//{
+//	float avg[3];
+//	int i;
+//	for (i = 0; i < 3; i++)
+//		avg[i] = (stu[i].math + stu[i].english + stu[i].computer) / 3;
+//	int max = 0;
+//	for (i = 1; i < 3; i++)
+//		if (avg[i] > avg[max])
+//			max = i;
+//	printf("num   name       math       english    computer   \n");
+//	printf("%-6d%-  10s %-10.2f %-10.2f %-10.2f\n", stu[max].num, stu[max].name,
+//		stu[max].math, stu[max].english, stu[max].computer);
+//}
+//int main()
+//{
+//	struct Student stu[3] = { {1,"zhang san",98.0,99.0,100},
+//		{2,"Wang Fang",90,100,99},{3,"Li Si",100,91,100} };
+//	fun(stu);
 //	return 0;
 //}
