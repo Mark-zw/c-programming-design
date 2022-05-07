@@ -9,6 +9,9 @@ int main()
 		printf("Open file failed\n");
 	else
 		printf("Open file success\n");
+	char str[20] = { 0 };
+	fgets(str, 10, fp);
+	printf("str is %s\n", str);
 	//char ch = getchar();
 	////2.read/write file
 	//while (ch != '#')
@@ -30,6 +33,7 @@ int main()
 		putchar(ch1);
 		ch1 = fgetc(fp);
 	}
+	fputs("\nChina\n", fp1);
 	//3.close file
 	if (fp)
 	{

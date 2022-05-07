@@ -1,3 +1,3 @@
 ﻿  chapter_10.c
-D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(37,16): warning C4047: “==”:“FILE *”与“int”的间接级别不同
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(41,16): warning C4047: “==”:“FILE *”与“int”的间接级别不同
   chapter_10.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\x64\Debug\chapter_10.exe
