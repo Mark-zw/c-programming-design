@@ -83,5 +83,7 @@
 //		fputs("\n", fp);
 //		printf("%s\n", str[i]);
 //	}
+//	fclose(fp);
 //	return 0;
 //}
+
