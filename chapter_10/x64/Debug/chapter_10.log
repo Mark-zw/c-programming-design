@@ -1,3 +1,6 @@
 ﻿  chapter_10.c
-D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(41,16): warning C4047: “==”:“FILE *”与“int”的间接级别不同
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(58,7): warning C4013: “gets”未定义；假设外部返回 int
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(64,14): warning C4013: “strcmp”未定义；假设外部返回 int
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(67,11): warning C4013: “strcpy”未定义；假设外部返回 int
+D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\chapter_10.c(77,7): warning C4013: “exit”未定义；假设外部返回 int
   chapter_10.vcxproj -> D:\Ai-QiYiCat\GitHub\c-programming-design\chapter_10\x64\Debug\chapter_10.exe
