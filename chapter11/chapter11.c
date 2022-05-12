@@ -1,0 +1,2 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#define PI 3.1415
